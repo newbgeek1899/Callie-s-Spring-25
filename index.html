@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Callie Reid - Academic Schedule Spring 2025</title>
+    <title>Callie Reid - Academic Schedule and Duties Spring 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -34,7 +34,7 @@
     <div class="max-w-6xl mx-auto p-4">
         <header class="text-center mb-8">
             <h1 class="text-3xl font-bold mb-2 dark:text-white">Callie Reid</h1>
-            <h2 class="text-xl text-gray-600 dark:text-gray-300">Academic Schedule - Spring 2025</h2>
+            <h2 class="text-xl text-gray-600 dark:text-gray-300">Academic Schedule and Duties - Spring 2025</h2>
             <div class="text-lg font-mono mt-2" id="clock"></div>
         </header>
 
@@ -51,247 +51,135 @@
 
     <script>
         const schedule = {
-    Monday: [
-        {
-            time: '10:40-11:30',
-            type: 'CARE',
-            course: 'SLS1010L Grader 0.25FTE - CARE',
-            location: 'BEL 0004',
-            role: 'CARE Support',
-            details: '50% of your assignment is to work with the CARE SLS class that is a support class for MAC1105'
-        },
-        {
-            time: '12:00-12:50',
-            type: 'TA Duty',
-            course: 'MAC1105 Lect 21',
-            location: 'HWC2100',
-            role: 'Proctor 2',
-            professor: 'Prof. Sheaib',
-            colleagues: ['Heeralu Pathirannehelage, Samadhi Lochana Premasiri']
-        },
-        {
-            time: '8:00-8:50',
-            type: 'Class',
-            course: 'MAT5941-01',
-            location: 'HCB',
-            details: 'Class MWF'
-        }
-    ],
-    Tuesday: [
-        {
-            time: '11:35-12:50',
-            type: 'Class',
-            course: 'MAP5932-01',
-            location: 'LOV',
-            details: 'Class TR'
-        },
-        {
-            time: '1:20-2:35',
-            type: 'Class',
-            course: 'MAP5346-01',
-            location: 'LOV',
-            details: 'Class TR'
-        },
-        {
-            time: '3:05-3:55',
-            type: 'TA Duty',
-            course: 'MAC1105 Lab 22',
-            location: '104HTL',
-            role: 'Proctor 2',
-            professor: 'Prof. Sheaib',
-            colleagues: ['Ding, David']
-        },
-        {
-            time: '4:50-5:40',
-            type: 'TA Duty',
-            course: 'MAC1105 Lab 26',
-            location: '104HTL',
-            role: 'Proctor 2',
-            professor: 'Prof. Sheaib',
-            colleagues: ['Ding, David']
-        }
-    ],
-    Wednesday: [
-        {
-            time: '8:00-8:50',
-            type: 'Class',
-            course: 'MAT5941-01',
-            location: 'HCB',
-            details: 'Class MWF'
-        },
-        {
-            time: '12:00-12:50',
-            type: 'TA Duty',
-            course: 'MAC1105 Lect 21',
-            location: 'HWC2100',
-            role: 'Proctor 1',
-            professor: 'Prof. Sheaib',
-            details: 'Primary TA for this section'
-        },
-        {
-            time: '3:05-4:20',
-            type: 'Class',
-            course: 'MAP6939-02',
-            location: 'LOV',
-            details: 'Class W'
-        }
-    ],
-    Thursday: [
-        {
-            time: '11:35-12:50',
-            type: 'Class',
-            course: 'MAP5932-01',
-            location: 'LOV',
-            details: 'Class TR'
-        },
-        {
-            time: '1:20-2:35',
-            type: 'Class',
-            course: 'MAP5346-01',
-            location: 'LOV',
-            details: 'Class TR'
-        }
-    ],
-    Friday: [
-        {
-            time: '8:00-8:50',
-            type: 'Class',
-            course: 'MAT5941-01',
-            location: 'HCB',
-            details: 'Class MWF'
-        },
-        {
-            time: '12:00-12:50',
-            type: 'TA Duty',
-            course: 'MAC1105 Lect 21',
-            location: 'HWC2100',
-            role: 'Primary TA',
-            professor: 'Prof. Sheaib',
-            colleagues: ['Ohanian, Charles']
-        },
-        {
-            time: '1:20-2:10',
-            type: 'Class',
-            course: 'MAP5423-01',
-            location: 'LOV',
-            details: 'Class MWF'
-        }
-    ]
-};
-    Monday: [
-        {
-            time: '10:40-11:30',
-            type: 'CARE',
-            course: 'SLS1010L Grader 0.25FTE - CARE',
-            location: 'BEL 0004',
-            role: 'CARE Support',
-            details: '50% of your assignment is to work with the CARE SLS class that is a support class for MAC1105'
-        },
-        {
-            time: '12:00-12:50',
-            type: 'TA Duty',
-            course: 'MAC1105 Lect 21',
-            location: 'HWC2100',
-            role: 'Proctor 2',
-            professor: 'Prof. Sheaib',
-            colleagues: ['Heeralu Pathirannehelage, Samadhi Lochana Premasiri']
-        }
-    ],
-    Tuesday: [
-        {
-            time: '3:05-3:55',
-            type: 'TA Duty',
-            course: 'MAC1105 Lab 22',
-            location: '104HTL',
-            role: 'Proctor 2',
-            professor: 'Prof. Sheaib',
-            colleagues: ['Ding, David']
-        },
-        {
-            time: '4:50-5:40',
-            type: 'TA Duty',
-            course: 'MAC1105 Lab 26',
-            location: '104HTL',
-            role: 'Proctor 2',
-            professor: 'Prof. Sheaib',
-            colleagues: ['Ding, David']
-        }
-    ],
-    Wednesday: [
-        {
-            time: '12:00-12:50',
-            type: 'TA Duty',
-            course: 'MAC1105 Lect 21',
-            location: 'HWC2100',
-            role: 'Proctor 1',
-            professor: 'Prof. Sheaib',
-            details: 'Primary TA for this section'
-        }
-    ],
-    Thursday: [],
-    Friday: [
-        {
-            time: '12:00-12:50',
-            type: 'TA Duty',
-            course: 'MAC1105 Lect 21',
-            location: 'HWC2100',
-            role: 'Primary TA',
-            professor: 'Prof. Sheaib',
-            colleagues: ['Ohanian, Charles']
-        }
-    ]
-};
             Monday: [
                 {
+                    time: '8:00A-8:50A',
+                    type: 'Class',
+                    course: 'MAT5941-01',
+                    location: 'HCB',
+                    details: ''
+                },
+                {
                     time: '10:40-11:30',
-                    type: 'CARE',
-                    course: 'SLS1010L Grader (0.25FTE)',
+                    type: 'Grader',
+                    course: 'SLS1010L',
                     location: 'BEL 0004',
-                    role: 'CARE Support',
-                    details: 'Support class for MAC1105'
+                    details: 'Grader for CARE'
                 },
                 {
                     time: '12:00-12:50',
-                    type: 'TA Duty',
+                    type: 'Lecture',
                     course: 'MAC1105 Lect 21',
                     location: 'HWC2100',
-                    role: 'TA',
-                    professor: 'Prof. Sheaib',
-                    colleagues: ['Heeralu Pathirannehelage, Samadhi Lochana Premasiri']
+                    details: 'Proctor: Callie Reid'
+                },
+                {
+                    time: '1:20P-2:10P',
+                    type: 'Class',
+                    course: 'MAP5423-01',
+                    location: 'LOV',
+                    details: ''
                 }
             ],
             Tuesday: [
                 {
+                    time: '11:35A-12:50P',
+                    type: 'Class',
+                    course: 'MAP5932-01',
+                    location: 'LOV',
+                    details: ''
+                },
+                {
+                    time: '1:20P-2:35P',
+                    type: 'Class',
+                    course: 'MAP5346-01',
+                    location: 'LOV',
+                    details: ''
+                },
+                {
                     time: '3:05-3:55',
-                    type: 'TA Duty',
+                    type: 'Lab',
                     course: 'MAC1105 Lab 22',
                     location: '104HTL',
-                    role: 'TA',
-                    professor: 'Prof. Sheaib',
-                    colleagues: ['Ding, David']
+                    details: 'Proctor: Callie Reid'
                 },
                 {
                     time: '4:50-5:40',
-                    type: 'TA Duty',
+                    type: 'Lab',
                     course: 'MAC1105 Lab 26',
                     location: '104HTL',
-                    role: 'TA',
-                    professor: 'Prof. Sheaib',
-                    colleagues: ['Ding, David']
+                    details: 'Proctor: Callie Reid'
                 }
             ],
             Wednesday: [
                 {
+                    time: '8:00A-8:50A',
+                    type: 'Class',
+                    course: 'MAT5941-01',
+                    location: 'HCB',
+                    details: ''
+                },
+                {
                     time: '12:00-12:50',
-                    type: 'TA Duty',
+                    type: 'Lecture',
                     course: 'MAC1105 Lect 21',
                     location: 'HWC2100',
-                    role: 'Primary TA',
-                    professor: 'Prof. Sheaib'
+                    details: 'Proctor: Callie Reid'
+                },
+                {
+                    time: '1:20P-2:10P',
+                    type: 'Class',
+                    course: 'MAP5423-01',
+                    location: 'LOV',
+                    details: ''
+                },
+                {
+                    time: '3:05P-4:20P',
+                    type: 'Class',
+                    course: 'MAP6939-02',
+                    location: 'LOV',
+                    details: ''
                 }
             ],
-            Thursday: [],
-            Friday: []
+            Thursday: [
+                {
+                    time: '11:35A-12:50P',
+                    type: 'Class',
+                    course: 'MAP5932-01',
+                    location: 'LOV',
+                    details: ''
+                },
+                {
+                    time: '1:20P-2:35P',
+                    type: 'Class',
+                    course: 'MAP5346-01',
+                    location: 'LOV',
+                    details: ''
+                }
+            ],
+            Friday: [
+                {
+                    time: '8:00A-8:50A',
+                    type: 'Class',
+                    course: 'MAT5941-01',
+                    location: 'HCB',
+                    details: ''
+                },
+                {
+                    time: '12:00-12:50',
+                    type: 'Lecture',
+                    course: 'MAC1105 Lect 21',
+                    location: 'HWC2100',
+                    details: 'Proctor: Callie Reid'
+                },
+                {
+                    time: '1:20P-2:10P',
+                    type: 'Class',
+                    course: 'MAP5423-01',
+                    location: 'LOV',
+                    details: ''
+                }
+            ]
         };
 
         function updateClock() {
@@ -315,31 +203,27 @@
 
             const container = document.getElementById('scheduleContainer');
             const daySchedule = schedule[day];
-            
+
             if (!daySchedule || daySchedule.length === 0) {
                 container.innerHTML = '<div class="text-center text-gray-500 dark:text-gray-400 py-8">No events scheduled for ' + day + '</div>';
                 return;
             }
 
-            container.innerHTML = daySchedule.map((event, index) => `
-                <div class="event-card p-4 rounded-lg shadow-md ${event.type === 'CARE' ? 'bg-green-50 dark:bg-green-900' : 'bg-blue-50 dark:bg-blue-900'}">
+            container.innerHTML = daySchedule.map((event) => `
+                <div class="event-card p-4 rounded-lg shadow-md ${event.type === 'Class' ? 'bg-purple-50 dark:bg-purple-900' : 'bg-blue-50 dark:bg-blue-900'}">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="text-lg font-semibold ${event.type === 'CARE' ? 'text-green-700 dark:text-green-300' : 'text-blue-700 dark:text-blue-300'}">${event.course}</span>
-                        <span class="px-3 py-1 rounded text-sm ${event.type === 'CARE' ? 'bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-200' : 'bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-blue-200'}">${event.type}</span>
+                        <span class="text-lg font-semibold ${event.type === 'Class' ? 'text-purple-700 dark:text-purple-300' : 'text-blue-700 dark:text-blue-300'}">${event.course}</span>
+                        <span class="px-3 py-1 rounded text-sm ${event.type === 'Class' ? 'bg-purple-100 text-purple-800 dark:bg-purple-800 dark:text-purple-200' : 'bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-blue-200'}">${event.type}</span>
                     </div>
                     <div class="space-y-1 text-gray-600 dark:text-gray-300">
                         <div><strong>Time:</strong> ${event.time}</div>
                         <div><strong>Location:</strong> ${event.location}</div>
-                        ${event.professor ? `<div><strong>Professor:</strong> ${event.professor}</div>` : ''}
-                        ${event.role ? `<div><strong>Role:</strong> ${event.role}</div>` : ''}
-                        ${event.colleagues ? `<div><strong>Colleagues:</strong> ${event.colleagues.join(', ')}</div>` : ''}
-                        ${event.details ? `<div class="mt-2 italic">${event.details}</div>` : ''}
+                        ${event.details ? `<div><strong>Details:</strong> ${event.details}</div>` : ''}
                     </div>
                 </div>
             `).join('');
         }
 
-        // Show Monday schedule by default
         showDay('Monday');
     </script>
 </body>
