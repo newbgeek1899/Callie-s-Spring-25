@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Callie Reid - Academic Schedule and Duties Spring 2025</title>
+    <title>Callie Reid - Academic Schedule Spring 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -34,7 +34,7 @@
     <div class="max-w-6xl mx-auto p-4">
         <header class="text-center mb-8">
             <h1 class="text-3xl font-bold mb-2 dark:text-white">Callie Reid</h1>
-            <h2 class="text-xl text-gray-600 dark:text-gray-300">Academic Schedule and Duties - Spring 2025</h2>
+            <h2 class="text-xl text-gray-600 dark:text-gray-300">Academic Schedule - Spring 2025</h2>
             <div class="text-lg font-mono mt-2" id="clock"></div>
         </header>
 
@@ -53,131 +53,129 @@
         const schedule = {
             Monday: [
                 {
-                    time: '8:00A-8:50A',
+                    time: '8:00-8:50',
                     type: 'Class',
                     course: 'MAT5941-01',
                     location: 'HCB',
-                    details: ''
+                    details: 'Your Class'
                 },
                 {
                     time: '10:40-11:30',
-                    type: 'Grader',
+                    type: 'TA Duty',
                     course: 'SLS1010L',
                     location: 'BEL 0004',
-                    details: 'Grader for CARE'
+                    role: 'Grader (0.25FTE - CARE)',
+                    colleagues: ['TA Sheaib']
                 },
                 {
                     time: '12:00-12:50',
-                    type: 'Lecture',
+                    type: 'TA Duty',
                     course: 'MAC1105 Lect 21',
                     location: 'HWC2100',
-                    details: 'Proctor: Callie Reid'
+                    role: 'Proctor',
+                    colleagues: ['TA Sheaib']
                 },
                 {
-                    time: '1:20P-2:10P',
+                    time: '1:20-2:10',
                     type: 'Class',
                     course: 'MAP5423-01',
                     location: 'LOV',
-                    details: ''
+                    details: 'Your Class'
                 }
             ],
             Tuesday: [
                 {
-                    time: '11:35A-12:50P',
+                    time: '11:35-12:50',
                     type: 'Class',
                     course: 'MAP5932-01',
                     location: 'LOV',
-                    details: ''
+                    details: 'Your Class'
                 },
                 {
-                    time: '1:20P-2:35P',
+                    time: '1:20-2:35',
                     type: 'Class',
                     course: 'MAP5346-01',
                     location: 'LOV',
-                    details: ''
+                    details: 'Your Class'
                 },
                 {
                     time: '3:05-3:55',
-                    type: 'Lab',
+                    type: 'TA Duty',
                     course: 'MAC1105 Lab 22',
                     location: '104HTL',
-                    details: 'Proctor: Callie Reid'
+                    role: 'Proctor',
+                    colleagues: ['TA Sheaib']
                 },
                 {
                     time: '4:50-5:40',
-                    type: 'Lab',
+                    type: 'TA Duty',
                     course: 'MAC1105 Lab 26',
                     location: '104HTL',
-                    details: 'Proctor: Callie Reid'
+                    role: 'Proctor',
+                    colleagues: ['TA Sheaib']
                 }
             ],
             Wednesday: [
                 {
-                    time: '8:00A-8:50A',
+                    time: '8:00-8:50',
                     type: 'Class',
                     course: 'MAT5941-01',
                     location: 'HCB',
-                    details: ''
+                    details: 'Your Class'
                 },
                 {
                     time: '12:00-12:50',
-                    type: 'Lecture',
+                    type: 'TA Duty',
                     course: 'MAC1105 Lect 21',
                     location: 'HWC2100',
-                    details: 'Proctor: Callie Reid'
+                    role: 'Proctor',
+                    colleagues: ['TA Sheaib']
                 },
                 {
-                    time: '1:20P-2:10P',
+                    time: '1:20-2:10',
                     type: 'Class',
                     course: 'MAP5423-01',
                     location: 'LOV',
-                    details: ''
+                    details: 'Your Class'
                 },
                 {
-                    time: '3:05P-4:20P',
+                    time: '3:05-4:20',
                     type: 'Class',
                     course: 'MAP6939-02',
                     location: 'LOV',
-                    details: ''
+                    details: 'Your Class'
                 }
             ],
             Thursday: [
                 {
-                    time: '11:35A-12:50P',
+                    time: '11:35-12:50',
                     type: 'Class',
                     course: 'MAP5932-01',
                     location: 'LOV',
-                    details: ''
+                    details: 'Your Class'
                 },
                 {
-                    time: '1:20P-2:35P',
+                    time: '1:20-2:35',
                     type: 'Class',
                     course: 'MAP5346-01',
                     location: 'LOV',
-                    details: ''
+                    details: 'Your Class'
                 }
             ],
             Friday: [
                 {
-                    time: '8:00A-8:50A',
+                    time: '8:00-8:50',
                     type: 'Class',
                     course: 'MAT5941-01',
                     location: 'HCB',
-                    details: ''
+                    details: 'Your Class'
                 },
                 {
-                    time: '12:00-12:50',
-                    type: 'Lecture',
-                    course: 'MAC1105 Lect 21',
-                    location: 'HWC2100',
-                    details: 'Proctor: Callie Reid'
-                },
-                {
-                    time: '1:20P-2:10P',
+                    time: '1:20-2:10',
                     type: 'Class',
                     course: 'MAP5423-01',
                     location: 'LOV',
-                    details: ''
+                    details: 'Your Class'
                 }
             ]
         };
@@ -219,6 +217,8 @@
                         <div><strong>Time:</strong> ${event.time}</div>
                         <div><strong>Location:</strong> ${event.location}</div>
                         ${event.details ? `<div><strong>Details:</strong> ${event.details}</div>` : ''}
+                        ${event.role ? `<div><strong>Role:</strong> ${event.role}</div>` : ''}
+                        ${event.colleagues ? `<div><strong>Colleagues:</strong> ${event.colleagues.join(', ')}</div>` : ''}
                     </div>
                 </div>
             `).join('');
